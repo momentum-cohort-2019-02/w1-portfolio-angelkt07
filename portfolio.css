@@ -1,0 +1,80 @@
+
+.lizard {
+    background:
+        url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.page {
+    display:flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.top-page {
+    height: 575px;
+}
+
+.bottom-page {
+    height: auto;
+}
+
+.box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.bottom-border {
+    height: 100px;
+    background-color: gray; 
+    text-align: left bottom; 
+}
+
+.name {
+    color: white;
+    font-size: 5rem;
+    text-align: left;
+    /* font-family: 'Dancing Script'; */
+    font-family: 'Raleway';
+}
+
+.about {
+    background-color: blue;
+    font-family: 'Indie Flower';
+    color: white; 
+    font-weight: normal;  
+    text-align: center; 
+    width: 33.3%;
+}
+
+.projects {
+    background-color: green;
+    font-family: 'Indie Flower';
+    color: white; 
+    font-weight: normal;  
+    text-align: center; 
+    width: 33.3%;
+}
+
+.resume {
+    background-color: purple;
+    font-family: 'Indie Flower';
+    color: white; 
+    font-weight: normal;  
+    text-align: center; 
+    width: 33.3%;
+}
+
+.about a {
+    color: white;
+}
+
+.projects a {
+    color: white;
+}
+
+.resume a {
+    color: white;
+}
