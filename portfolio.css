@@ -1,11 +1,21 @@
 
 .lizard {
     background:
-        url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg");
+        url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg") center;
         /* url("/Users/kntiller/w1-portfolio-angelkt07/DSC_2285.jpg"); */
         /* url("/Users/kntiller/w1-portfolio-angelkt07/Destiny.jpg"); */
     background-repeat: no-repeat;
     background-size: 100%;
+    position: center;
+}
+
+.about-body {
+    background:
+    linear-gradient(
+        rgba(70, 70, 70, 0.45), 
+        rgba(255, 255, 255, 0.45));
+        background-size: 100%;
+        background-repeat: no-repeat;
 }
 
 .page {
@@ -26,24 +36,50 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
 }
 
 .bottom-border {
+    display: flex;
+    flow-direction: row;
     height: 100px;
-    background-color: gray; 
-    text-align: left bottom; 
+    background: 
+    linear-gradient(
+        rgba(62, 62, 62, 0.75), 
+        rgba(62, 62, 62, 0.75));
+    /* background-color: gray;  */
+    justify-content: space-between;
+    width: fit-content (100%)
+
+}
+
+.quote {
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 2rem;
+    margin-top: 0;
 }
 
 .name {
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: left;
     /* font-family: 'Dancing Script'; */
-    font-family: 'Raleway';
+    font-family: 'Handlee';
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .about {
-    background-color: blue;
+    background: 
+        linear-gradient(
+            rgba(4, 51, 255, 0.75), 
+            rgba(4, 51, 255, 0.75));
+    /* background-color: blue; */
     font-family: 'Indie Flower';
     color: white; 
     font-weight: normal;  
@@ -52,7 +88,11 @@
 }
 
 .projects {
-    background-color: green;
+    background: 
+    linear-gradient(
+        rgba(23, 220, 16, 0.60), 
+        rgba(23, 220, 16, 0.60));
+    /* background-color: green; */
     font-family: 'Indie Flower';
     color: white; 
     font-weight: normal;  
@@ -61,7 +101,11 @@
 }
 
 .resume {
-    background-color: purple;
+    background: 
+    linear-gradient(
+        rgba(128, 27, 128, 0.75), 
+        rgba(128, 27, 128, 0.75));
+    /* background-color: purple; */
     font-family: 'Indie Flower';
     color: white; 
     font-weight: normal;  
@@ -79,4 +123,25 @@
 
 .resume a {
     color: white;
+}
+
+h1.about-header {
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+@media (min-width 720px) {
+    .lizard {
+        background:
+            url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg") center;
+            /* url("/Users/kntiller/w1-portfolio-angelkt07/DSC_2285.jpg"); */
+            /* url("/Users/kntiller/w1-portfolio-angelkt07/Destiny.jpg"); */
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: center;
+        box-sizing: inherit;
+    }
+
 }
