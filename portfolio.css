@@ -154,9 +154,11 @@ h1.about-header {
     font-size: 1.40rem;
     padding-left: 2rem;
     list-style-image: 
-        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/star_bullet_3.png");
-    line-height: 1.5em;
+        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/star_bullet_4.png");
+}
 
+li {
+    line-height: 1.5em;
 }
 
 
