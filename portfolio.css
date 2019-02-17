@@ -188,7 +188,18 @@ h1.about-header {
     font-size: 1.40rem;
     padding-left: 2rem;
     list-style-image: 
-        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/star_bullet_5.png");
+        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/star_bullet_5.png");
+}
+
+.socialmedia {
+    font-family: 'Nova Flat';
+    color: #6321a8;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .about-page {
@@ -377,18 +388,20 @@ p.dog {
 
 .lazyriverpic {
     width: 25%;
+    padding: 1rem;
     /* background-color: purple; */
 }
 
 .dogsitepic {
     width: 25%;
+    padding-top: 2rem;
     /* background-color: orchid; */
 }
-img {
+.image {
     margin: 2rem;
-    padding-top: 2rem;
     height: 150px;
     width: auto;
+    border: blue solid 3px;
 }
 
 .project > h2 {
