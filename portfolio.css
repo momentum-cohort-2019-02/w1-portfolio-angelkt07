@@ -16,6 +16,15 @@ body.about-body {
     background-repeat: no-repeat;
 }
 
+body.projects-body {
+    background:
+    radial-gradient(
+        rgba(255, 255, 255, 0.30),
+        rgba(107, 106, 106, 0.75));
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .lizard {
     background:
         url("/Users/kntiller/w1-portfolio-angelkt07/portfolio-images/DSC_1104.jpg") center;
@@ -91,40 +100,47 @@ cite {
 .first-link {
     background: 
         linear-gradient(
-            rgba(4, 51, 255, 0.75), 
-            rgba(4, 51, 255, 0.75));
+            rgba(4, 51, 255, 0.80), 
+            rgba(4, 51, 255, 0.80));
     /* background-color: blue; */
     font-family: 'Indie Flower';
     color: white; 
     font-weight: normal;  
     text-align: center; 
     width: 33.3%;
+    font-size: 1.19rem;
 }
 
 .second-link {
     background: 
     linear-gradient(
-        rgba(23, 220, 16, 0.70), 
-        rgba(23, 220, 16, 0.70));
+        rgba(23, 220, 16, 0.80), 
+        rgba(23, 220, 16, 0.80));
     /* background-color: green; */
     font-family: 'Indie Flower';
     color: white; 
     font-weight: normal;  
     text-align: center; 
     width: 33.3%;
+    font-size: 1.19rem;
+}
+
+#pslink {
+    background-color: #48B444;
 }
 
 .third-link {
     background: 
     linear-gradient(
-        rgba(128, 27, 128, 0.75), 
-        rgba(128, 27, 128, 0.75));
+        rgba(128, 27, 128, 0.80), 
+        rgba(128, 27, 128, 0.80));
     /* background-color: purple; */
     font-family: 'Indie Flower';
     color: white; 
     font-weight: normal;  
     text-align: center; 
     width: 33.3%;
+    font-size: 1.19rem;
 }
 
 .first-link a {
@@ -233,7 +249,6 @@ h1.about-header {
     max-height: auto;
 }
 
-
 .projects_bottom {
     height: 30px;
 }
@@ -253,8 +268,6 @@ h1.about-header {
 }
 
 .link {
-    text-align: center;
-    color: white;
     line-height: 330px;
     font-size: 2.5rem;
 }
@@ -269,7 +282,7 @@ h1.about-header {
 
 .photography:hover {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),
+        linear-gradient(rgba(100, 100, 100, 0.75),rgba(100, 100, 100, 0.75)),
         url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
     background-size: cover;
     height: 50%;
@@ -278,7 +291,7 @@ h1.about-header {
 }
 
 .artwork {
-    background-image: url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
+    background-image: url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Owl-1-2.jpg");
     background-size: cover;
     height: 50%;
     background-repeat: no-repeat;
@@ -288,11 +301,16 @@ h1.about-header {
 .artwork:hover {
     background: 
         linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),
-        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg") top center/cover;
+        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Owl-1-2.jpg") top center/cover;
     background-size: cover;
     height: 50%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.completed-projects {
+    font-family: 'Handlee';
+    font-size: 2rem;
 }
 
 /* .wip {
@@ -320,8 +338,34 @@ h1.about-header {
     display: block;
     width: 100%;
     height: 100%;
+    font-family: 'Indie Flower'
 }
 
+.artwork a {
+    color: black;
+}
+
+.artwork a:hover {
+    color: white;
+}
+
+/* h1.animation {
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
+@keyframes slidein  {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } */
 
 h1.resume {
     text-align: center;
@@ -332,13 +376,10 @@ h1.resume {
 @media (min-width 720px) {
     .lizard {
         background:
-            url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg") center;
-            /* url("/Users/kntiller/w1-portfolio-angelkt07/DSC_2285.jpg"); */
-            /* url("/Users/kntiller/w1-portfolio-angelkt07/Destiny.jpg"); */
+            url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg") right;
         background-repeat: no-repeat;
-        background-size: 100%;
-        position: center;
-        box-sizing: inherit;
+        background-size: cover;
+        position: right;
     }
 
 }
