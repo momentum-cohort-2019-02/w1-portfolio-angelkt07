@@ -1,13 +1,29 @@
-
+body {
+    background:
+    linear-gradient(
+        rgba(125, 125, 125, 0.75), 
+        rgba(255, 255, 255, 0.25));
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+body.about-body {
+    background:
+    linear-gradient(
+        rgba(125, 125, 125, 0.70), 
+        rgba(255, 255, 255, 0.15));
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .lizard {
     background:
-        url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg") center;
+        url("/Users/kntiller/w1-portfolio-angelkt07/portfolio-images/DSC_1104.jpg") center;
         /* url("/Users/kntiller/w1-portfolio-angelkt07/lizard-rename.jpg"); */
         /* url("/Users/kntiller/w1-portfolio-angelkt07/Destiny.jpg"); */
     background-repeat: no-repeat;
     background-size: 100%;
     position: center;
 }
+
 .page {
     display:flex;
     flex-direction: column;
@@ -154,28 +170,13 @@ h1.about-header {
     font-size: 1.40rem;
     padding-left: 2rem;
     list-style-image: 
-        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/star_bullet_4.png");
-}
-
-li {
-    line-height: 1.5em;
-}
-
-
-
-.about-body {
-    background:
-    linear-gradient(
-        rgba(125, 125, 125, 0.75), 
-        rgba(255, 255, 255, 0.25));
-    background-size: 100%;
-    background-repeat: no-repeat;
+        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/star_bullet_5.png");
 }
 
 .about-page {
     display: flex;
     flex-direction: row
-    max-height: 1080px;
+    max-height: 1000px;
 }
 
 .left-container {
@@ -183,10 +184,6 @@ li {
     flex-flow: column wrap;
     width: 30%;
     height: inherit;
-    /* background:
-    linear-gradient(
-        rgba(15, 229, 239, 0.35), 
-        rgba(255, 255, 255, 0.65)); */
 }
 
 .middle-container {
@@ -222,14 +219,53 @@ li {
     font-size: 25px;
     margin-top: 0;
 }
+/* 
+body.projects-body {
+    min-height: 100%;
+} */
 
-.projects-body {
-
+.projects-page {
+    display: flex;
+    flex-direction: column;
+    max-height: 1080px;
 }
 
 .projects-top {
-    height: 
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    max-height: screen;
+    min-height: 100%;
 }
+
+
+.projects_bottom, .projects-top:after {
+    height: 30px;
+}
+
+.projects-left-container {
+    display: block;
+    float: left;
+    height: 650px;
+    width: 66.6%;
+    background-color: green;
+}
+
+.projects-right-container {
+    float: right; 
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    width: 33.3%;
+}
+
+h1.resume {
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Dancing Script';
+}
+
+
 
 @media (min-width 720px) {
     .lizard {
