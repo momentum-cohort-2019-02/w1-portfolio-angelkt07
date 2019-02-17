@@ -6,6 +6,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 body.about-body {
     background:
     linear-gradient(
@@ -21,7 +22,7 @@ body.about-body {
         /* url("/Users/kntiller/w1-portfolio-angelkt07/lizard-rename.jpg"); */
         /* url("/Users/kntiller/w1-portfolio-angelkt07/Destiny.jpg"); */
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     position: center;
 }
 
@@ -220,59 +221,113 @@ h1.about-header {
     font-size: 25px;
     margin-top: 0;
 }
-/* 
-body.projects-body {
-    min-height: 100%;
-} */
 
 .projects-page {
     display: flex;
     flex-direction: column;
-    max-height: 1080px;
 }
 
 .projects-top {
     display: flex;
     flex-direction: row;
-    background-color: aqua;
-    max-height: screen;
-    min-height: 100%;
+    max-height: auto;
 }
 
 
-.projects_bottom, .projects-top:after {
+.projects_bottom {
     height: 30px;
 }
 
 .projects-left-container {
     display: block;
     float: left;
-    height: 650px;
     width: 66.6%;
-    background-color: green;
 }
 
 .projects-right-container {
+    flex: 1 1 auto;
     float: right; 
-    display: flex;
     flex-direction: column;
-    background-color: yellow;
-    width: 33.3%;
+    width: 33.4%;
+    margin-right: 0;
 }
+
+.link {
+    text-align: center;
+    color: white;
+    line-height: 330px;
+    font-size: 2.5rem;
+}
+
+.photography {
+    background-image: url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
+    background-size: cover;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.photography:hover {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),
+        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
+    background-size: cover;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.artwork {
+    background-image: url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
+    background-size: cover;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.artwork:hover {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),
+        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg") top center/cover;
+    background-size: cover;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* .wip {
+    background-image: url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
+    background-size: cover;
+    height: 33.4%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wip:hover {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),
+    url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
+    background-size: cover;
+    height: 33.4%;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.link a {
+    text-align: center;
+    color:white; 
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 
 h1.resume {
     text-align: center;
     font-size: 75px;
     font-family: 'Dancing Script';
 }
-
-.photography {
-    background-image: url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
-    background-size: contain;
-    background-repeat: no repeat;
-}
-
-
 
 @media (min-width 720px) {
     .lizard {
