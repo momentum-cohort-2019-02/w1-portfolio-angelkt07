@@ -254,7 +254,7 @@ h1.about-header {
 }
 
 .projects-left-container {
-    display: block;
+    flex: 1 1 auto;
     float: left;
     width: 66.6%;
 }
@@ -263,16 +263,18 @@ h1.about-header {
     flex: 1 1 auto;
     float: right; 
     flex-direction: column;
-    width: 33.4%;
+    width: 33.3%;
     margin-right: 0;
+    height: auto;
 }
 
 .link {
-    line-height: 330px;
+    line-height: 328px;
     font-size: 2.5rem;
+    border: 1px solid white;
 }
 
-.photography {
+.photography:hover {
     background-image: url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
     background-size: cover;
     height: 50%;
@@ -280,17 +282,16 @@ h1.about-header {
     background-position: top;
 }
 
-.photography:hover {
+.photography {
     background:
         linear-gradient(rgba(100, 100, 100, 0.75),rgba(100, 100, 100, 0.75)),
         url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
     background-size: cover;
-    height: 50%;
+    height: 49.60%;
     background-repeat: no-repeat;
-    background-position: top;
 }
 
-.artwork {
+.artwork:hover {
     background-image: url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Owl-1-2.jpg");
     background-size: cover;
     height: 50%;
@@ -298,38 +299,15 @@ h1.about-header {
     background-position: center;
 }
 
-.artwork:hover {
+.artwork {
     background: 
         linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),
         url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Owl-1-2.jpg") top center/cover;
     background-size: cover;
-    height: 50%;
+    height: 49.60%;
     background-repeat: no-repeat;
     background-position: center;
 }
-
-.completed-projects {
-    font-family: 'Handlee';
-    font-size: 2rem;
-}
-
-/* .wip {
-    background-image: url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
-    background-size: cover;
-    height: 33.4%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.wip:hover {
-    background: 
-    linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),
-    url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Camera_bw.jpg");
-    background-size: cover;
-    height: 33.4%;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
 
 .link a {
     text-align: center;
@@ -338,15 +316,103 @@ h1.about-header {
     display: block;
     width: 100%;
     height: 100%;
-    font-family: 'Indie Flower'
-}
-
-.artwork a {
-    color: black;
+    font-family: 'Indie Flower';
+    background-position: top;
 }
 
 .artwork a:hover {
+    color: black;
+}
+
+.artwork a {
     color: white;
+}
+
+.completed-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Handlee';
+    font-size: 1em;
+    /* background-color: green; */
+    height: 100%;
+    /* max-height: 660px; */
+    max-width: 100%;
+}
+
+.projectcontainer1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    height: 50%;
+    /* background-color: aqua; */
+}
+
+.projectcontainer2 {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    /* background-color:red; */
+}
+
+.lazyriver {
+    margin: 1rem;
+    width: 75%;
+    /* background-color: orange; */
+}
+
+p.river {
+    text-indent: 5ch;
+}
+
+.dogsite {
+    margin: 1rem;
+    width: 75%;
+    /* background-color: yellow; */
+}
+
+p.dog {
+    text-indent: 5ch;
+}
+
+.lazyriverpic {
+    width: 25%;
+    /* background-color: purple; */
+}
+
+.dogsitepic {
+    width: 25%;
+    /* background-color: orchid; */
+}
+img {
+    margin: 2rem;
+    padding-top: 2rem;
+    height: 150px;
+    width: auto;
+}
+
+.project > h2 {
+    font-size: 2rem;
+    padding: .5rem;
+    color: #6321A8;
+}
+
+
+h1.resume {
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Dancing Script';
+}
+
+@media (min-width 720px) {
+    .lizard {
+        background:
+            url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg") right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: right;
+    }
+
 }
 
 /* h1.animation {
@@ -366,20 +432,3 @@ h1.about-header {
       width: 100%;
     }
   } */
-
-h1.resume {
-    text-align: center;
-    font-size: 75px;
-    font-family: 'Dancing Script';
-}
-
-@media (min-width 720px) {
-    .lizard {
-        background:
-            url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg") right;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: right;
-    }
-
-}
