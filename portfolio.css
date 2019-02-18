@@ -27,9 +27,7 @@ body.projects-body {
 
 .lizard {
     background:
-        url("/Users/kntiller/w1-portfolio-angelkt07/portfolio-images/DSC_1104.jpg") center;
-        /* url("/Users/kntiller/w1-portfolio-angelkt07/lizard-rename.jpg"); */
-        /* url("/Users/kntiller/w1-portfolio-angelkt07/Destiny.jpg"); */
+        url("/Users/kntiller/w1-portfolio-angelkt07/portfolio-images/DSC_1104.jpg") bottom right;
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
@@ -342,6 +340,7 @@ h1.about-header {
     color: white;
 }
 
+
 .completed-projects {
     display: flex;
     flex-direction: row;
@@ -586,54 +585,8 @@ li.refs, .phone, .refposition {
 }
 
 @media (min-width 720px) {
-    .lizard {
-        background:
-            url("/Users/kntiller/w1-portfolio-angelkt07/DSC_1104.jpg") right;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: right;
-    }
+   
 
-    .box {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        height: 25%;
-        text-align: center;
-    }
-
-    .bottom-page {
-        height: 75%;
-    }
-    
-    .top-page {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .bottom-border {
-        display: flex;
-        flow-direction: row;
-        background: 
-        linear-gradient(
-            rgba(62, 62, 62, 0.75), 
-            rgba(62, 62, 62, 0.75));
-        /* background-color: gray;  */
-        justify-content: space-between;
-        width: fit-content (100%)
-    
-    }
-
-    .quote {
-        color: white;
-        font-size: 1rem;
-        font-stretch: wider;
-        text-align: right;
-        margin-right: 2rem;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 1rem;
-    }
 
 }
 
