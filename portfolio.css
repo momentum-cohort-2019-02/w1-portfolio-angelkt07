@@ -451,6 +451,34 @@ h1.resume {
     margin-bottom: 1rem;
 }
 
+.button-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19%;
+    position: center;
+}
+
+.button {
+    height: 40px;
+    width: 150px;
+    font-size: 1.1rem;
+    background:
+    radial-gradient(
+        rgba(0, 78, 174, 2),
+        rgba(35, 83, 155, 0.60));
+    border: none;
+    border-radius: 45px;
+}
+
+a.resumebutton {
+    color: white;
+    text-decoration: none;
+    font-family: 'Handlee';
+    margin-top: 0rem;
+    padding-bottom: 2rem;
+}
+
 .resume-right-container {
     width: 20%;
     /* background-color: burlywood; */
@@ -477,7 +505,8 @@ h3#pastwork, #skill-list, #certs, #references {
 .skills {
     list-style: square;
 }
- #summary {
+
+#summary {
      text-indent: 5ch;
 }
 
