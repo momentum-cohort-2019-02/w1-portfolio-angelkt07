@@ -1,4 +1,4 @@
-body {
+.home-body {
     background:
     linear-gradient(
         rgba(125, 125, 125, 0.75), 
@@ -204,9 +204,9 @@ h1.about-header {
 
 .about-page {
     /* background: 
-        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/background.png"); */
+        url("https://raw.githubusercontent.com/momentum-cohort-2019-02/w1-portfolio-angelkt07/master/portfolio-images/Background2.png");
     background-position: bottom;
-    background-size: cover;
+    background-size: cover; */
     display: flex;
     flex-direction: row
     max-height: 1000px;
@@ -226,7 +226,6 @@ h1.about-header {
     padding-left: 2rem;
     padding-right: 5rem;
     text-align: left;
-    /* background-color: aqua; */
 }
 
 .right-container {
@@ -414,11 +413,147 @@ p.dog {
     color: #6321A8;
 }
 
+.resume-html {
+    background-color: #AAAAAA;
+}
+
+
+.resume-top-page {}
+
+.resume-bottom-page {
+    display: flex;
+    flex-direction: row;
+    /* background-color: yellow; */
+    height: 680px;
+}
 
 h1.resume {
     text-align: center;
     font-size: 75px;
     font-family: 'Dancing Script';
+}
+
+.resume-left-container {
+    width: 20%;
+    /* background-color: olivedrab; */
+}
+
+.resumebox {
+    padding: 2rem;
+    width: 60%;
+    /* background-color: aqua; */
+}
+
+.resumecontainer {
+    font-family: 'Nunito Sans';
+    background-color: white;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.resume-right-container {
+    width: 20%;
+    /* background-color: burlywood; */
+}
+
+h1#resume-title {
+    margin-bottom: 0rem;
+}
+
+p#resume-current-job {
+    margin-top: 0;
+}
+
+h3#pastwork, #skill-list, #certs, #references {
+    text-align:center;
+    margin-bottom: .5rem;
+}
+
+#skill-list {
+    text-align: left;
+    margin: 1em;
+}
+
+.skills {
+    list-style: square;
+}
+ #summary {
+     text-indent: 5ch;
+}
+
+#refs {
+    list-style: none;
+    width: fit-content (100%)
+}
+
+.daterange {
+    margin-top: 0rem;
+    font-style: italic;
+    font-size: .95rem;
+}
+
+.company {
+    font-size: .90rem;
+    margin-bottom: 0;
+}
+
+.jobtitle {
+    margin-top: 0;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+    font-style: bold;
+    font-family: 'Bitter';
+}
+
+.notary {
+    list-style: none;
+    text-align: center;
+}
+
+li.refs, .phone, .refposition {
+    list-style: none;
+}
+
+.refcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.reference {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.refs {
+    width: 20%;
+    /* background-color: green; */
+}
+
+.phone {
+    width: 20%;
+    /* background-color: yellow; */
+}
+
+.refposition {
+    width: 60%;
+    /* background-color: orange; */
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+}
+
+.job-left {
+    width: 40%;
+    /* background-color: yellow; */
+}
+
+.job-right {
+    width: 60%;
+    /* background-color: orange; */
 }
 
 @media (min-width 720px) {
@@ -430,22 +565,46 @@ h1.resume {
         position: right;
     }
 
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 25%;
+        text-align: center;
+    }
+
+    .bottom-page {
+        height: 75%;
+    }
+    
+    .top-page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bottom-border {
+        display: flex;
+        flow-direction: row;
+        background: 
+        linear-gradient(
+            rgba(62, 62, 62, 0.75), 
+            rgba(62, 62, 62, 0.75));
+        /* background-color: gray;  */
+        justify-content: space-between;
+        width: fit-content (100%)
+    
+    }
+
+    .quote {
+        color: white;
+        font-size: 1rem;
+        font-stretch: wider;
+        text-align: right;
+        margin-right: 2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+
 }
 
-/* h1.animation {
-    animation-duration: 4s;
-    animation-name: slidein;
-}
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
-@keyframes slidein  {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  } */
