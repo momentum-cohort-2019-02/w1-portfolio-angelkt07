@@ -156,9 +156,8 @@ h1.about-header {
     font-family: 'Dancing Script';
     font-size: 3rem;
     color: #630AA8;
-    padding: 0;
-    margin-left: 3rem;
-    line-height: 50px;
+    padding-top: 2rem;
+    line-height: 1rem;
 }
 
 .funfacts {
@@ -214,12 +213,13 @@ h1.about-header {
     flex-flow: column wrap;
     width: 30%;
     height: inherit;
+    padding-top: 2rem;
 }
 
 .middle-container {
     width: 33.3%;
     height: 1080px;
-    padding-top: 7rem;
+    padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 5rem;
     text-align: left;
@@ -227,7 +227,7 @@ h1.about-header {
 
 .right-container {
     width: 26%;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-left: 2rem;
     text-align: left;
     align-content: center;
@@ -644,12 +644,13 @@ li.refs, .phone, .refposition {
         flex-flow: column wrap; */
         height: 30%;
         width: 100%;
+        padding-top: 0rem;
     }
     
     .middle-container {
         height: 33.3%;
         width: 100%;
-        padding-top: 2rem;
+        padding-top: 1rem;
         padding-left: 2rem;
         padding-right: 1rem;
         text-align: left;
