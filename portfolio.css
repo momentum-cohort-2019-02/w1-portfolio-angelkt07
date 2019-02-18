@@ -1,4 +1,4 @@
-.home-body {
+.home-body, .photo-body, .artwork-body {
     background:
     linear-gradient(
         rgba(125, 125, 125, 0.75), 
@@ -579,6 +579,31 @@ li.refs, .phone, .refposition {
 .job-right {
     width: 60%;
     /* background-color: orange; */
+}
+
+.photo-header {
+    font-family: 'Dancing Script';
+    font-size: 3rem;
+    color: #6C3483;
+    padding-top: 2rem;
+    line-height: 1rem;
+    padding-bottom: 2rem;
+    /* background-color: aqua; */
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.about-photo {
+    margin-top: 0;
+    padding: 1rem;
+    font-family: 'Nunito Sans';
+    /* background-color: yellow; */
+}
+
+.message {
+    font-family: 'Dancing Script';
+    font-size: 3rem;
+    text-align: center;
 }
 
 /* https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
