@@ -595,10 +595,17 @@ li.refs, .phone, .refposition {
 
 .about-photo {
     margin-top: 0;
+    margin-bottom: 0;
     padding: 1rem;
     font-family: 'Nunito Sans';
     text-indent: 5ch;
     /* background-color: yellow; */
+}
+
+.about-photo-1 {
+    margin-top: 0;
+    padding-left: 1rem;
+    font-family: 'Nunito Sans';
 }
 
 .message {
